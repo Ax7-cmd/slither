@@ -282,6 +282,11 @@ class AbstractDetector(metaclass=abc.ABCMeta):
         output.data["check"] = self.ARGUMENT
         output.data["impact"] = classification_txt[self.IMPACT]
         output.data["confidence"] = classification_txt[self.CONFIDENCE]
+        output.data["wiki"] = self.WIKI
+        output.data["wiki_title"] = self.WIKI_TITLE
+        output.data["wiki_description"] = self.WIKI_DESCRIPTION
+        output.data["wiki_exploit_scenario"] = self.WIKI_EXPLOIT_SCENARIO
+        output.data["wiki_recomendation"] = self.WIKI_RECOMMENDATION
 
         return output
 
